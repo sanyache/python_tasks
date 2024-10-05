@@ -18,3 +18,5 @@ print(max_counter)
 
 s0 = [len(x) for x in re.findall(r"0+", s)]
 print(max(s0))
+smax = [len(x) for x in re.findall("0+|1+", s)]
+print(smax)

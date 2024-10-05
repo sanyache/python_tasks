@@ -13,3 +13,4 @@ for i in range(len(s) - len(sub) + 1):
     else:
         counter += 1
 print(counter)
+print(s.count(sub))

@@ -3,7 +3,8 @@
 і роздрукувати отримане чило.
 """
 n = [x for x in input() if int(x) % 2 == 0]
-s = ''
-for ch in n:
-    s += ch
+s = ''.join(n)
 print(int(s))
+# print(''.join([ x for x in input() if int(x) % 2 == 0]))
+# for ch in n:
+#     s += ch
