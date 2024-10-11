@@ -16,6 +16,9 @@ class Student:
         for subject in subjects:
              self.subjects[subject] = []
 
+    def add_score(self, subj, score):
+        self.subjects[subj].append(score)
+
     def __str__(self):
         return '{} {}'.format(self.last_name, self.first_name)
 
@@ -28,5 +31,8 @@ for i in range(n):
     student = Student(i, s_first_name, s_last_name, s_birth)
     print(student)
     students.append(student)
+
+# students[0].add_score(subjects[0],10)
+# print(students[0].subjects)
 
 create_json(students)
