@@ -1,14 +1,16 @@
 import json
 
+
+# noinspection PyArgumentList
 def create_json(student_list):
-    with open("students.json", "w", encoding='utf-8') as file:
-        json.dump(student_list, file, default=vars, ensure_ascii=False, indent=4)
+    with open("students.json", "w", encoding='utf-8'):
+        json.dump(student_list, default=vars, ensure_ascii=False, indent=4)
 
 subjects = ['математика', "інформатика", "фізика", "хімія"]
 
 class Student:
-    def __init__(self, id, first_name, last_name, birthday):
-        self.id = id
+    def __init__(self, student_id, first_name, last_name, birthday):
+        self.id = student_id
         self.first_name = first_name
         self.last_name = last_name
         self.birthday = birthday
