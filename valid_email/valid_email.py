@@ -9,6 +9,10 @@ def is_valid_email(string):
     else:
         return False
     dots = string.split('.')
+    print( dots)
+    for dot in dots:
+        if not len(dot):
+            return False
     if  not(1 < len(dots) <= 3) or not(2 <= len(dots[-1]) <= 3):
         return False
     return True
