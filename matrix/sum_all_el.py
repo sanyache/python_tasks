@@ -15,6 +15,9 @@ for i in range(n):
     for j in range(m):
         s += matrix[i][j]
 print(s)
-sum_each_row = [sum(row) for row in matrix]
-print(sum(sum_each_row))
+s = 0
+for row in matrix:
+    for data in row:
+        s += data
+print(s)
 
