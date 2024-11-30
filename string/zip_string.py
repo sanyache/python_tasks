@@ -9,11 +9,10 @@ zip_str = ''
 for letter in s:
     if letter == tmp:
         number += 1
+        continue
     elif number:
         zip_str += str(number) + tmp
-        number = 1
-        tmp = letter
-    else:
-        tmp = letter
-        number = 1
+    number = 1
+    tmp = letter
+
 print(zip_str + str(number)+tmp)
