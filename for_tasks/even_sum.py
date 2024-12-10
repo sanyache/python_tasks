@@ -1,5 +1,5 @@
 """
 сума парних
 """
-even_numbers = [x for x in map(int, input().split()) if not x & 1]
+even_numbers = [int(x) for x in input().split() if not int(x) & 1]
 print(sum(even_numbers))
