@@ -1,3 +1,7 @@
+"""
+Скласти програму яка визначає чи із заданого набору букв
+можна утворити задані слова
+"""
 from collections import Counter
 n = int(input())
 words = [input() for _ in range(n)]
