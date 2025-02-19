@@ -11,5 +11,7 @@ if len(s) < 3:
     print(0)
     exit()
 combs = list(combinations(s, 3))
+#print(combs)
 set_num = {x for x in combs if 99 < int(''.join(x)) < 1000}
+print(set_num)
 print(len(set_num))
