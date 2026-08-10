@@ -6,15 +6,18 @@
 25 50 - 2 25
 15 43 - 3 13
 """
+
+
 k, n = map(int, input().split())
 if n % k == 0:
     print(n//k, k)
 else:
     print(n//k+1, n % k)
 
-K, N = map(int, input().split())
-page = (N - 1) // K + 1
-line = (N - 1) % K + 1
+page = (n - 1) // k + 1
+line = (n - 1) % k + 1
 print(page, line)
+
+
 
 
