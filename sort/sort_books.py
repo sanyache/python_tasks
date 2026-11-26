@@ -6,21 +6,24 @@
 доки не знайде для неї місце.
 Напишіть програму, яка показує, як виглядає полиця після кожної нової книжки,
 і рахує, скільки разів бібліотекар зсунув книжку.
+5
+42 17 58 8 23
+6
 """
 
 n = int(input())
 books = list(map(int, input().split()))
 
 shelf = []
-total = 0
+cnt = 0
 for b in books:
     shelf.append(b)
     j = len(shelf) - 1
     while j > 0 and shelf[j - 1] > b:
         shelf[j] = shelf[j - 1]   # зсуваємо книжку праворуч
         j -= 1
-        total += 1
+        cnt += 1
     shelf[j] = b
     print(*shelf)
 
-print("Переміщень:", total)
+print("Переміщень:", cnt)
